@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mini Projects !</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <style>
+            *{font-family: 'Poppins', sans-serif;}
+            .standard-title{
+                margin-top: 10px ;
+                margin-right: 20px ;
+                margin-left: 100px ;
+                float: left;
+            }
+            .standard-button{
+                margin-top: 13px;
+            }
+            .standard-paragraph{
+                margin-right: 500px ;
+                margin-top: 20px ;
+                margin-left: 100px ;
+                margin-bottom: 50px ;
+            }
+        </style>
+
+        <script>
+            function hideAll(){
+                var divsToHide = document.getElementsByClassName("home-page"); //divsToHide is an array
+                for(var i = 0; i < divsToHide.length; i++){
+                    divsToHide[i].style.visibility = "hidden";
+                }
+            }
+            function toggleTP1()
+            {
+                hideAll();
+                const tp = document.getElementById("tp1");
+                tp.style.visibility = "visible";
+            }
+            function toggleTP2()
+            {
+                hideAll();
+                const tp = document.getElementById("tp2");
+                tp.style.visibility = "visible";
+            }
+            function toggleTP3()
+            {
+                hideAll();
+                const tp = document.getElementById("tp3");
+                tp.style.visibility = "visible";
+            }
+            function showAll()
+            {
+                var divsToHide = document.getElementsByClassName("home-page"); //divsToHide is an array
+                for(var i = 0; i < divsToHide.length; i++){
+                    divsToHide[i].style.visibility = "visible";
+                }
+            }
+        </script>
+
+    </head>
+
+    <body style="background-color: rgb(10, 10, 35); color: #b6b6b6">
+        <nav>
+            <a href="./test1.html">test1</a>
+            <a href="./test2.html">test2</a>
+        </nav>
+        <div class = "header">
+            <button onclick="showAll()" type="button" class="btn btn-outline-primary standard-button">Retour</button>
+        </div>
+        
+        <div>
+            <!-- TP1 ------------------------------------------------------------------------------------------------------------------->
+            <div id = "tp1" class = "home-page">
+                <h1 class = "standard-title">Projet 01</h1>
+
+                <button onclick="toggleTP1()" type="button" class="btn btn-outline-primary standard-button" id = "buttonTP1">Y Aller</button>
+
+                <p id = "description-tp1" class = "standard-paragraph">
+                    lalalalalala
+                </p>
+
+            </div>
+            <!-- TP2 ------------------------------------------------------------------------------------------------------------------->
+            <div id = "tp2" class = "home-page">
+                <h1 class = "standard-title">Projet 02</h1>
+
+                <button onclick="toggleTP2()" type="button" class="btn btn-outline-primary standard-button" id = "buttonTP2">Y Aller</button>
+
+                <p id = "description-tp2" class = "standard-paragraph">
+                    Ce sujet de Tp vise à introduire de nouvelles notions concernant la manipulation de fichier.
+                    En plus de savoir lire ou écrire des fichiers, vous allez apprendre entre autres à les effacer, à
+                    créer des dossiers et à changer de répertoire. Ce sujet constitue également une mini-initiation
+                    à l’interprétaion de commandes Linux (que vous utiliserez en S3 et pour le reste du cursus à
+                    EPITA). Vous allez donc devoir coder un interpréteur de commandes similaire à celui de Linux
+                    qui va permettre de réaliser les différentes actions décrites plus tôt.
+                </p>
+            </div>        
+            <!-- TP3 ------------------------------------------------------------------------------------------------------------------->
+            <div id = "tp3" class = "home-page">
+                <h1 class = "standard-title">Projet 03</h1>
+
+                <button onclick="toggleTP3()" type="button" class="btn btn-outline-primary standard-button" id = "buttonTP3">Y Aller</button>
+
+                <p id = "description-tp3" class = "standard-paragraph">
+                    Ce TP a pour but de vous faire comprendre comment est implémenté un certain nombre de
+                    structures de données. N’hésitez donc pas à poser des questions aux ACDC et à regarder vos
+                    cours d’algo sur le sujet. De plus n’oubliez pas de tester votre code.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

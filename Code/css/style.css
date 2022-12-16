@@ -32,7 +32,7 @@
     height: 100%;
     color: #999;
     font-size: 16px;
-    padding: 0px 30px;
+    padding: 0px 50px;
 }
 
 /*this is the section style*/
@@ -51,7 +51,7 @@
     background-color: black;
 }
 .inner_header{
-    width : 1000px;
+    width : 830px;
     height : 100%;
     display: block;
     margin: 0 auto;

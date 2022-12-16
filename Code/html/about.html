@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <!--This is to give a name to the tab-->
+        <title>Lance-Leau</title>
+        <!--Tell the sricpt to look at the css file for the style-->
+        <link rel="stylesheet" type="text/css" href="./../css/style.css">
+        <link rel="stylesheet" type="text/css" href="./../css/slideShow.css">
+        <!--import the razer font-->
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./../../Images/logo.png">
+        
+    </head>
+    <body class = "center" style="background-color:#000000">
+        <!--this is the header-->
+        <div class="header">
+            <div class="inner_header">
+                <ul class="navigation">
+                    <a href="./../../index.html"><li>Home</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a><li>Report</li></a>
+                    <a href="./links.html"><li>Links</li></a>
+                    <a href="./Presentation.html"><li>Media</li></a>
+                </ul>
+                <div class="logo"></div>
+            </div>
+            <div class="separatorLine" style="background-color:#47E10C"></div>
+        </div>
+        <!--this is the body-->
+        <h1 class="standard-title">About</h1>
+        <p class="standard-paragraph">
+            I have always been fascinated by the power of computer graphics and visualization to bring complex concepts and data to life. When I first learned about 3D wireframe renderers, I was struck by their ability to create simple, lightweight representations of 3D objects that allow users to see the basic structure and layout of an object without the distractions of surface details or complex shading. This seemed like a valuable tool for a wide range of applications, including design, prototyping, and debugging. I knew that I wanted to learn more about 3D wireframe renderers and potentially even build my own at some point in the future. The idea of being able to create a tool that could help people better understand and interact with 3D data was extremely appealing to me.
+        </p>
+        <p class="standard-paragraph">
+            The first step in the process was to understand the basics of 3D graphics and how to represent 3D objects in code. This involved learning about concepts such as vertices, edges, and transformations. Vertices are the points in 3D space that define the shape of an object. Edges are simply lines that connect two vertices. Transformations are mathematical operations that can be applied to an object to change its position, orientation, or scale in 3D space.
+        </p>
+        <p class="standard-paragraph">
+            I also had to familiarize myself with techniques for projecting 3D objects onto a 2D screen, such as perspective projection and parallel projection. Perspective projection involves projecting 3D points onto a 2D screen using the perspective of a virtual camera. Parallel projection involves projecting 3D points onto a 2D screen using parallel lines.
+        </p>
+        <p class="standard-paragraph">
+            Once I had a solid foundation in these concepts, I began implementing the renderer. The first challenge I faced was how to store and manipulate the 3D data. I experimented with different data structures and algorithms, trying to find the most efficient and simple solution. This involved a lot of trial and error and required a lot of patience and persistence.
+        </p>
+        <p class="standard-paragraph">
+            I considered using a simple list to store the vertices, but this proved to be inefficient for larger models with a lot of vertices and edges. Instead, I decided to use a data structure called a half-edge mesh, which is a type of data structure specifically designed for storing and manipulating 3D geometry.
+        </p>
+        <p class="standard-paragraph">
+            The next step was to implement the rendering itself. This required writing code to iterate over the 3D data and convert it into 2D screen coordinates. I only implemented a wireframe rendering mode, even though other techniques exists, such as solid, wireframe, and points. Solid mode involves filling in the faces of the 3D model with a solid color, while wireframe mode involves drawing only the edges of the model. Points mode involves rendering only the vertices of the model.
+        </p>
+        <p class="standard-paragraph">
+            In addition to the technical challenges, I also had to consider the user experience. I had to make sure that the app was easy to use and intuitive for the user, which required designing a clear and straightforward user interface.
+        </p>
+        <p class="standard-paragraph">
+            I implemented various features to enhance the user experience, such as the ability to pan, zoom, and rotate the camera using mouse input, the ability to switch between rendering modes, and the ability to load and save 3D models.
+        </p>
+        <p class="standard-paragraph">
+            Overall, developing the 3D wireframe renderer was a challenging but rewarding experience. It required a lot of problem
+        </p>
+    </body>
+</html>

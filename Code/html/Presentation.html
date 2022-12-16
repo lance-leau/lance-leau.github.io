@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <!--This is to give a name to the tab-->
+        <title>Lance-Leau</title>
+        <!--Tell the sricpt to look at the css file for the style-->
+        <link rel="stylesheet" type="text/css" href="./../css/style.css">
+        <link rel="stylesheet" type="text/css" href="./../css/slideShow.css">
+        <!--import the razer font-->
+        <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./../../Images/logo.png">
+        
+    </head>
+    <body class = "center" style="background-color:#000000">
+        <!--this is the header-->
+        <div class="header">
+            <div class="inner_header">
+                <ul class="navigation">
+                    <a href="./../../index.html"><li>Home</li></a>
+                    <a href="./about.html"><li>About</li></a>
+                    <a><li>Report</li></a>
+                    <a href="./links.html"><li>Links</li></a>
+                    <a href="./Presentation.html"><li>Media</li></a>
+                </ul>
+                <div class="logo"></div>
+            </div>
+            <div class="separatorLine" style="background-color:#47E10C"></div>
+        </div>
+        <!--this is the body-->
+        <h1 class="standard-title">Project Presentation</h1>
+        <div class="imageList">
+            <div class="bigImageCenter"  style="background-image: url('./../../Images/ui2.png');"></div>
+            <div style="color: white" class="ceneterDiv">
+                <h2>Controll Settings</h2>
+                <div class="linksList">
+                    <ul class="links">
+                        <li>Delete - deletes the given shape if at least one other shape is left</li>
+                        <li>Size - modifies the size of the shape</li>
+                        <li>FOV - modifies the FOV of the camera</li>
+                        <li>Center - shows the center of rotation with a red dot</li>
+                        <li>Vertices - shows the 27 vertices that forms the edges can connect to</li>
+                        <li>Sensitivity - controls how fast the shape rotates when dragged by the mouse</li>
+                    </ul>
+                    </ul>
+                </div>
+            </div>
+            <div style="height: 420">
+              <div class="slidershow middle" style="top: 145%; width: 639; height:379 ">
+                <div class="slides">
+                    <input type="radio" name="r" id="r1" checked>
+                    <input type="radio" name="r" id="r2">
+                    <input type="radio" name="r" id="r3">
+                    <div class="slide s1">
+                        <img src="./../../Images/ui3.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./../../Images/ui4.png" alt="">
+                    </div>
+                    <div class="slide">
+                        <img src="./../../Images/ui5.png" alt="">
+                    </div>
+                </div>
+            
+                    <div class="imageNavigation">
+                        <label for="r1" class="bar"></label>
+                        <label for="r2" class="bar"></label>
+                        <label for="r3" class="bar"></label>
+                    </div>
+              </div>
+            </div>
+            <div style="color: white" class="ceneterDiv">
+              <h2>Controll Settings</h2>
+              <div class="linksList">
+                  <ul class="links">
+                      <li>Point 1/2: control wich point to move</li>
+                      <li>Arrows - move point to next vertex</li>
+                      <li>Add Edge - Add an edge (a line) to the shape</li>
+                      <li>Undo - removes the last added edge, can be repeted</li>
+                      <li>Save - add shape to saved list, you can now create a new shape</li>
+                      <li>Delete - deletes the shape</li>
+                  </ul>
+                  </ul>
+              </div>
+            </div>
+        </div>
+    </body>
+</html>

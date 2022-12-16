@@ -1,5 +1,6 @@
 *{
     font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
 }
 
 /*this is the text style*/
@@ -14,6 +15,9 @@
     float: center;
 }
 .standard-paragraph{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: justify;
     color: #FFFFFF;
     font-size: 16px;
 }
@@ -58,7 +62,7 @@
 }
 .separatorLine{
     width : 100%;
-    height : 2px;
+    height : 1px;
 }
 
 /*this is the button style*/
@@ -69,4 +73,35 @@
 /*this is the allignment style*/
 .center{
     text-align: center;
+}
+
+.linksList{
+    margin-left: 20%;
+    float: left;
+    color : #FFFFFF;
+}
+
+.linksList h2{
+    float: left;
+}
+
+.links li{
+    text-align: left;
+    margin-top: 15px;
+}
+.bigImageCenter{
+    background-size: 500px;
+    background-repeat: no-repeat;
+    height : 300px;
+    width : 500px;
+    margin:auto;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+.ceneterDiv{
+    width: 60%;
+    height: 300px;
+    margin-left: 20%;
 }

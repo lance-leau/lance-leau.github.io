@@ -5,20 +5,24 @@
 
 /*this is the text style*/
 .standard-title{
+    margin-top: 100px;
     font-size: 56px;
     color: #FFFFFF;
     float: center;
 }
 .standard-subtitle{
+    position: relative;
+    z-index: 1;
     font-size: 32px;
     color: #FFFFFF;
     float: center;
 }
 .standard-paragraph{
+    letter-spacing: 1px;
     margin-left: 20%;
     margin-right: 20%;
     text-align: justify;
-    color: #FFFFFF;
+    color: #DDDDDD;
     font-size: 16px;
 }
 .navigation{
@@ -32,32 +36,69 @@
 }
 .navigation a li{
     display: table-cell;
-    vertical-align: middle;
     height: 100%;
     color: #999999;
     font-size: 16px;
-    padding: 0px 50px;
+    padding: 1px 50px;
 }
 
 .navigation a li:hover{
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
+    animation-name: outline;
+    animation-timing-function: cubic-bezier(.73,.69,0,.72);
+    animation-duration: 1s;
     color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
     font-size: 16px;
-    padding: 0px 50px;
+    padding: 0px 49px;
+    box-shadow: 0 0 5px #47E10C, 0 0 10px #48e10c80, 0 0 20px #48e10c2c ;
 }
 
-/*this is the section style*/
+
+/*******************************this is the animations******************************/
+@keyframes rotation{
+    from{
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+    to{
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        transform: rotate(-90deg);
+    }
+  }
+  @keyframes outline{
+    0%{
+        box-shadow: 0 0 0px #47E10C, 0 0 0px #48e10c80, 0 0 0px #48e10c2c ;
+    }
+    100%{
+        box-shadow: 0 0 5px #47E10C, 0 0 10px #48e10c80, 0 0 20px #48e10c2c ;
+    }
+  }
+
+/******************************this is the section style******************************/
 .logo{
     background-image: url(./../../Images/logo.png);
     background-size: 40px;
-    background-position-y: 25%;
+    background-position-y: 50%;
     background-repeat: no-repeat;
-    height : 80px;
-    width : 80px;
+    height : 60px;
+    width : 40px;
+}
+.logo:hover{
+  animation-name: rotation;
+  animation-timing-function: cubic-bezier(0.63,-0.74, 0.44, 1.79);
+  animation-duration: 1s;
 }
 .header{
+    z-index: 10;
+    top: 0;
+    position: fixed;
     width : 100%;
     height : 60px;
     display: block;
@@ -74,36 +115,37 @@
     height : 1px;
 }
 
-.colorControl{
+.links a{
     color:#FFFFFF;
 }
 
-.colorControl:hover{
+.links a:hover{
     color:#AAAAAA;
 }
-/*this is the button style*/
+/******************************this is the button style******************************/
 .standard-button{
     margin-top: 13px;
 }
 
-/*this is the allignment style*/
+/******************************this is the allignment style******************************/
 .center{
     text-align: center;
 }
 
 .linksList{
+    width: 500px;
     margin-left: 20%;
     float: left;
     color : #FFFFFF;
 }
 
 .linksList h2{
-    float: left;
+    text-align: left;
 }
 
 .links li{
     text-align: left;
-    margin-top: 15px;
+    margin-bottom: 15px;
 }
 .bigImageCenter{
     background-size: 500px;
@@ -120,4 +162,35 @@
     width: 60%;
     height: 300px;
     margin-left: 20%;
+}
+/******************************this is the IDs******************************/
+#pygame:hover::before{
+    color: #FFFFFF;
+    width: 300px;
+    float: right;
+    text-align: cente;
+    content: "Pygame was used to create the window, draw the UI and draw the shape on the screen";
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
+#numpy:hover::before{
+    color: #FFFFFF;
+    width: 300px;
+    float: right;
+    text-align: justify;
+    content: "Numpy was only used because I couldn't be bothered multiplying matrices, I know how to do it so what is the point in doing it my-self?";
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 7px;
+}
+#sys:hover::before{
+    color: #FFFFFF;
+    width: 300px;
+    float: right;
+    text-align: justify;
+    content: "System Specific (sys) was used to call a function with arguments in the termianl from a python file";
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    padding: 5px 7px;
 }

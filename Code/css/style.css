@@ -35,6 +35,7 @@
     float: left;
 }
 .navigation a li{
+    bottom: -100px;
     display: table-cell;
     height: 100%;
     color: #999999;
@@ -193,4 +194,34 @@
     border: 1px solid #FFFFFF;
     border-radius: 5px;
     padding: 5px 7px;
+}
+#discord:hover{
+    visibility:visible;
+}
+#discord div{
+    width: 130px;
+    position: relative;
+    bottom: 42px;
+    left: -290px;
+    float: right;
+}
+#discord button{
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+    border: 2px solid #ffffff;
+    float: center;
+    visibility: hidden;
+    transition-duration: 0.4s;
+}
+#discord button:hover{
+    background-color: white;
+    color: black;
+}
+#discord:hover button{
+    visibility:visible;
 }

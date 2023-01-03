@@ -2,7 +2,7 @@
 <html lang="en">
 <html>
     <head>
-        <!--This is to give a name to the tab-->
+      <!--This is to give a name to the tab-->
         <title>Lance-Leau</title>
         <!--Tell the sricpt to look at the css file for the style-->
         <link rel="stylesheet" type="text/css" href="./../css/style.css">
@@ -37,7 +37,27 @@
           <h2>Personel Links</h2>
           <ul class="links">
             <a href="https://github.com/lance-leau"><li>GitHub</li></a>
-            <a href="https://www.google.com/search?q=Lancelot%234394"><li>Discord</li></a>
+            <a id="discord">
+              <li>Discord</li>
+              <div><button id="btn1"onclick="copyArgumentToClipboard('Lancelot#4394', 'btn1')">Copy ID</button></div>
+            </a>
+            <script>
+              const btn = document.getElementById('btn1');
+
+              btn.addEventListener('click', function handleClick() {
+                btn.textContent = 'ID Copied ✓';
+              });
+              function copyArgumentToClipboard(arg) {
+                navigator.clipboard.writeText(arg).then(function() {
+                  console.log('Copied to clipboard: ' + arg);
+                }, function(err) {
+                  console.error('Failed to copy: ', err);
+                });
+                setTimeout(function() {
+                  btn.textContent = 'Copy ID';
+                }, 1000);
+              }
+            </script>
             <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley"><li>Some Other Links</li></a>
           </ul>
           <h2>Dependencies</h2>
